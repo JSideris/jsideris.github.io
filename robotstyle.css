@@ -1,0 +1,35 @@
+.rwboardtile{
+	margin: 0px;
+	padding: 0px;
+	width: 16px;
+	height: 16px;
+	background-size: cover;
+}
+
+.rwblacktile{
+	background-color: lightblue;
+}
+
+.rwwhitetile{
+	background-color: #FFFFAA;
+}
+
+.rwredrobot{
+	background-image: url("redrobot.png");
+}
+
+.rwbluerobot{
+	background-image: url("bluerobot.png");
+}
+
+.rwredbase{
+	background-image: url("redrobotbase.png");
+}
+
+.rwbluebase{
+	background-image: url("bluerobotbase.png");
+}
+
+.rwrockobsticle{
+	background-image: url("rock.png");
+}
