@@ -33,5 +33,5 @@ var videosTab = dot
 	dot
 	.div(dot.span("<")).id("prev-video").onclick(prevVid)
 	.div(dot.span(">")).id("next-video").onclick(nextVid)
-	.iframe().id("video-player").attr("allowfullscreen")//.width(640).height(390)
+	.iframe().id("video-player").attr("allowfullscreen", "allowfullscreen")//.width(640).height(390)
 ).id("absolute-video-player-container").onclick(stopVideo).style("display: none;");
