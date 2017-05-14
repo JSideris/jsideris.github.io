@@ -15,21 +15,21 @@
 }
 
 .rwredrobot{
-	background-image: url("redrobot.png");
+	background-image: url("../images/redrobot.png");
 }
 
 .rwbluerobot{
-	background-image: url("bluerobot.png");
+	background-image: url("../images/bluerobot.png");
 }
 
 .rwredbase{
-	background-image: url("redrobotbase.png");
+	background-image: url("../images/redrobotbase.png");
 }
 
 .rwbluebase{
-	background-image: url("bluerobotbase.png");
+	background-image: url("../images/bluerobotbase.png");
 }
 
 .rwrockobsticle{
-	background-image: url("rock.png");
+	background-image: url("../images/rock.png");
 }
