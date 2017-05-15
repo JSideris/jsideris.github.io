@@ -281,6 +281,10 @@ body{
 	background-color: white;
 }
 
+.main-tabs>.dot-tab-content-container{
+	background-color: white;
+}
+
 /*Video Tabs*/
 
 .video-tabs{
@@ -365,4 +369,35 @@ body{
 }
 #next-video{
 	right: 0;
+}
+
+.research-tab-body{
+	padding: 20px;
+	text-align: left;
+}
+
+.paper-table{
+	border: 2px solid black;
+	background-color: rgb(200, 220, 255);
+	margin-bottom: 5px;
+}
+
+.linked-paper{
+	cursor: pointer;
+}
+
+.linked-paper:hover{
+	background-color: rgb(170, 190, 255);
+}
+
+.titled-paper>tr>td>img{
+	cursor: help;
+}
+
+.paper-table>tr>td{
+	vertical-align: top;
+}
+
+.paper-table>tr>td>h3{
+	margin-top: 0;
 }

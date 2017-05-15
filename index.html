@@ -28,6 +28,7 @@
 <script type="text/javascript" src="mywidgets.js"></script>
 <script type="text/javascript" src="maintab.js"></script>
 <script type="text/javascript" src="videostab.js"></script>
+<script type="text/javascript" src="researchtab.js"></script>
 
 <body>
 </body>
@@ -79,9 +80,9 @@ dot("body")
 	.div(
 		dot.fragmentTabs([
 			dot.tab("Main", "main", mainTab),
-			dot.tab("Videos", "videos", videosTab)
-			/*dot.tab("Research", "research", dot),
-			dot.tab("Interactive Logos", "logos", dot)*/
+			dot.tab("Videos", "videos", videosTab),
+			dot.tab("Research", "research", researchTab),
+			//dot.tab("Interactive Logos", "logos", dot)
 		], "main-tabs")
 
 	).id("content")

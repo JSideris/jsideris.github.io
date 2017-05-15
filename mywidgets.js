@@ -68,3 +68,20 @@ dot.createWidget("videoCategory", function(name, videoIds, playVideoCallback){
 		).class("row").style("width: 100%;");
 	}));
 });
+
+dot.createWidget("paper", function(title, year, url, thumbnail, abstract, titleText){
+	return dot.table(dot.tr(
+		dot.td(
+			dot.img().src(thumbnail).height(100)
+		).td(
+			dot.h3(dot.h(title).i(" (" + year + ")"))
+			.p(abstract)
+		)
+	)).class("paper-table" + (url ? " linked-paper" : "") + (titleText ? " titled-paper" : "")).if(url, function(){
+		return dot.onclick(function(){
+			window.open(url);
+		})
+	}).if(titleText, function(){
+		return dot.title(titleText);
+	});
+});

@@ -112,7 +112,7 @@ var mainTab = dot.displayBox(
 		return sequencrheaderblink;
 	}, 250);
 })
-.displayBox(
+/*.displayBox(
 	dot.fadedImageBackground("images/camerasolving.jpg", 0, 100, 0, 0.7, "left",
 		dot.img().src("images/glyph3.png").style("height: 150px;")
 		.div("Robust Marker-Based Camera Solving with Automatic Calibration").style("display: inline-block; width: 500px; vertical-align: top; margin-left: 20px; font-size: 28px; font-family: \"Arial Black\", Gadget, sans-serif; color: white;")
@@ -124,7 +124,7 @@ var mainTab = dot.displayBox(
 	.h2("Camera Solving")
 	.p("A common task in cinematography is to mix CGI into live-action shots. In order to do this effectively, the exact position of the camera must be known at all times. One way to accomplish this is using sophisitaced sets with perfectly-calibrated glyphs on the ceiling. This thesis, along with a rudamentary functional prototype, explored the possibility of building an uncalibrated set anywhere (even outdoors), then dynamically building a map during shooting.")
 	.a("Learn more.").class("learnmore").href("documents/RobustMarker.pdf").target("_blank")
-)
+)*/
 
 .displayBox(
 	dot.table(
