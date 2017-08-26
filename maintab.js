@@ -31,12 +31,12 @@ var mainTab = dot.displayBox(
 	dot.fadedImageBackground("images/steganodata.png", 0, 0, 0, 0.7, "left",
 	dot.img().src("images/ladonlabslogo.png").height(150)
 		.br()
-		.div("Machine learning for advanced productivity.").style("font-size: 30px; color: white; width: 300px; margin-top: 50px; font-weight: bold;")
+		.div("Solutions for advanced productivity.").style("font-size: 30px; color: white; width: 300px; margin-top: 50px; font-weight: bold;")
 	),
-	dot.h2("From Food to Fraud")
-	.p("Ladon Labs maintains a portfolio of intelligent tools for increasing productivity or reducing fraud. Most recently, we developed a stegano tagging tool capable of encoding images, video, and audio with hidden codes via imperceivable distortions. The codes are impossible to detect and cannot be removed due to their encoding scheme, as well as high redundancy. This allows distributers of high-value video content to track the source of pirated media (for instance, media outlets leaking preview copies of movies or television shows onto the internet).")
-	.p("Use the link below to download and test a trial version of the software.")
-	.a("Learn more.").class("learnmore").href("https://github.com/LadonLabs/SteganoTagger/releases").target("_blank")
+	dot.h2("Process Automation")
+	.p("Ladon Labs maintains a portfolio of intelligent tools for increasing productivity or reducing fraud. We also offer competitive prices on automation consulting, startup consulting, web app development, and UX design.")
+	.p("Check out our new website.")
+	.a("ladonlabs.com").class("learnmore").href("http://ladonlabs.com").target("_blank")
 )
 
 .displayBox(
