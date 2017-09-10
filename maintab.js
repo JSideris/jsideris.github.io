@@ -1,5 +1,7 @@
 var sequencrheaderblink = true;
-var mainTab = dot.displayBox(
+var mainTab = 
+
+/*dot.displayBox(
 	dot.fadedImageBackground("images/joshpresenting.jpg", 200, 225, 255, 0.7, "center", 
 		dot.img().src("images/phashtaglogo.png").height(150)
 		.br()
@@ -11,6 +13,18 @@ var mainTab = dot.displayBox(
 	.p("Phashtag was a venture originating from The Next 36 program at UofT. We used convolutional neural networks capable of identifying logos to explore a never-before-tapped dimension of social media analytics: images.")
 	.p("Upon graduating from the program, we raised about $100,000 in seed funding, but ultimately opted to pivot our technology to a new business model that seemed that seemed more commercializable. In 2015 I filed a provisional patent application for Point-of-sale Electronic Produce Identification (PEPI) - a hand-held \"barcode\" scanner capable of identifying produce at the checkout counter without the use of barcodes.")
 	.a("Learn more.").class("learnmore").href("https://www.youtube.com/watch?v=snUFqVx9QJs").target("_blank")
+)*/
+
+dot.displayBox(
+	dot.fadedImageBackground("images/steganodata.png", 0, 0, 0, 0.7, "left",
+	dot.img().src("images/ladonlabslogo.png").height(150)
+		.br()
+		.div("Solutions for advanced productivity.").style("font-size: 30px; color: white; width: 300px; margin-top: 50px; font-weight: bold;")
+	),
+	dot.h2("Process Automation")
+	.p("Ladon Labs maintains a portfolio of intelligent tools for increasing productivity or reducing fraud. We also offer competitive prices on automation consulting, startup consulting, web app development, and UX design.")
+	.p("Check out our new website.")
+	.a("ladonlabs.com").class("learnmore").href("http://ladonlabs.com").target("_blank")
 )
 
 .displayBox(
@@ -28,49 +42,30 @@ var mainTab = dot.displayBox(
 )
 
 .displayBox(
-	dot.fadedImageBackground("images/steganodata.png", 0, 0, 0, 0.7, "left",
-	dot.img().src("images/ladonlabslogo.png").height(150)
-		.br()
-		.div("Solutions for advanced productivity.").style("font-size: 30px; color: white; width: 300px; margin-top: 50px; font-weight: bold;")
-	),
-	dot.h2("Process Automation")
-	.p("Ladon Labs maintains a portfolio of intelligent tools for increasing productivity or reducing fraud. We also offer competitive prices on automation consulting, startup consulting, web app development, and UX design.")
-	.p("Check out our new website.")
-	.a("ladonlabs.com").class("learnmore").href("http://ladonlabs.com").target("_blank")
-)
-
-.displayBox(
 	dot.div(
-		dot.div(
-			dot.div("<").id("dothtmllt")
-			.div().id("dothtmllogodotsmall").style("display:none; margin-top:80px;")
-			.div("html")//.id("logohtml")
-			.div(">").id("dothtmlgt")
-		).id("dothtmllogo")
-		.br()
-		.br()
-		.div("A human-friendly way to build highly-dynamic web pages in pure JavaScript.").id("dothtmlslogan").$css("opacity", "0.1")
-	).id("dothtmllogopreview"),
+		//.div("A human-friendly way to build highly-dynamic web pages in pure JavaScript.").id("dothtmlslogan").$css("opacity", "0.1")
+	).id("dothtmllogopreview").style(dotcss.widthP(100).heightP(100)),
 	
 	dot.h2("HTML Page Builder")
 	.p("DOThtml is my answer to dynamic HTML page construction. It's more human-friendly than HTML or other page building / UI frameworks, 100% client-side with no compiler needed, and integrates with JQuery to provide tons of dynamic event listeners and display helpers. You can even use it to create widgets, like all the interactive info boxes on this page.")
 	.p("Here is another example of a super-dynamic website I built using DOThtml, demonstrating just how powerful it is: <a href=\"https://jsideris.github.io/AdvancedKspMissionCalculator/\" target=\"_blank\">Advanced KSP Mission Calculator</a>.")
 	.a("Learn more.").class("learnmore").href("https://jsideris.github.io/DOThtml/").target("_blank"),
 	function(){
-		$("#dothtmllt").hide(500);
-		$("#dothtmlgt").hide(500);
-		setTimeout(function(){
-			$("#dothtmllogodotsmall").show(300, function(){
-				setTimeout(function(){
-					$("#dothtmllogodotsmall").animate({width: 256, height: 256, marginTop: 0}, 500, "swing", function(){
-						dot("#dothtmllogodotsmall").h("DOT");
-						setTimeout(function(){
-							$("#dothtmlslogan").animate({opacity: 1}, 500, "swing");
-						}, 200);
-					});
-				}, 500);
-			});
-		}, 1000);
+		dothtmllogoinstance.play();
+	}
+)
+
+.displayBox(
+	dot.div(
+		//.div("A human-friendly way to build highly-dynamic web pages in pure JavaScript.").id("dothtmlslogan").$css("opacity", "0.1")
+	).id("dotcsslogopreview").style(dotcss.widthP(100).heightP(100)),
+	
+	dot.h2("Powerful JavaScript CSS Building")
+	.p("DOTcss is a CSS counterpart for DOThtml. However, it's a stand alone library with no dependencies.")
+	.p("It's designed to be the most powerful JavaScript-based style manipulator.")
+	.a("Learn more.").class("learnmore").href("http://jsideris.com/DOTcss").target("_blank"),
+	function(){
+		dotcsslogoinstance.play();
 	}
 )
 
@@ -126,7 +121,7 @@ var mainTab = dot.displayBox(
 	.a("Learn more.").class("learnmore").href("documents/RobustMarker.pdf").target("_blank")
 )*/
 
-.displayBox(
+/*.displayBox(
 	dot.table(
 		dot.iterate(27, function(y){
 			return dot.tr(
@@ -141,7 +136,7 @@ var mainTab = dot.displayBox(
 	.p("I started a robot fighting club at YorkU in 2010. We hosted various programming/electronic/soldering workshops, competitions, robot battles, etc. Our ultimate goal was to build a 120&nbsp;lb <a href=\"http://robogames.net/index.php\" target=\"_blank\">Robogames</a> robot (shown above), but sadly we were unable to raise the money (I'm still going to do it one day anyway). In 2013 we branched the club into Canada's first <a href=\"http://robogals.org/\" target=\"_blank\">Robogals</a> chapter.")
 	//.a("Learn more.").class("learnmore").href("").target("_blank") //The site has sadly been taken down.
 	, function(){beginGame(39, 27);}
-)
+)*/
 .div(
 	dot.div(
 		dot
@@ -158,6 +153,7 @@ var mainTab = dot.displayBox(
 	).style("padding: 20px;")
 	
 ).class("widgetContainer").style("background-color: #822; background-image: url(\"images/redbg.jpg\"); background-size: cover; font-family: \"Arial\", Gadget, sans-serif; font-size: 22px; color: #FFF; text-align: left; height: 800px;")
+.h(function(){})
 //.div(function(){}).class("widgetContainer").style("background-color: black;");
 
 /*.displayBox(function(){

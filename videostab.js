@@ -25,7 +25,7 @@ var videosTab = dot
 	dot.videoCategory("Engineering", ["qHcAXqsbH7g", "mmaNxsrwG8Y", "vuokupujbsE", "BOtMQ_L7mLc", "sIaNER9noY0", "4y2kPmxW-xk", "xbJ0dT-VZIQ", "NNGiKx-lMeo"], playVideo),
 	dot.videoCategory("Futurology", ["g8tLWgQX5EA", "wPIlrTOoR84"], playVideo),
 	dot.videoCategory("Puzzles", ["Q9qY9wZsq_M", "sIaNER9noY0", "7jpO6YrgUKU"], playVideo),
-	dot.videoCategory("Projects", ["MkkU73hpoGI", "prb96hcnzSA"], playVideo)
+	dot.videoCategory("Projects", ["5MTvWtpMeXk", "MkkU73hpoGI", "prb96hcnzSA"], playVideo)
 ], "video-tabs")
 
 .div(

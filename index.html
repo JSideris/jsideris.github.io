@@ -24,6 +24,11 @@
 <script type="text/javascript" src="scripts/Sequencr.dev.js"></script>
 <script type="text/javascript" src="scripts/a-star.js"></script>
 <script type="text/javascript" src="scripts/robotbattle.js"></script>
+<script type="text/javascript" src="scripts/logoapi.js"></script>
+
+<script type="text/javascript" src="scripts/emblems/jsiderislogo.js"></script>
+<script type="text/javascript" src="scripts/emblems/dothtmllogo.js"></script>
+<script type="text/javascript" src="scripts/emblems/dotcsslogo.js"></script>
 
 <script type="text/javascript" src="mywidgets.js"></script>
 <script type="text/javascript" src="maintab.js"></script>
@@ -38,43 +43,6 @@
 dot("body")
 .div(
 	dot.div(
-		dot.div(
-			dot.div("J").id("bigj").class("biginitial")
-			.div("S").id("bigs").class("biginitial")
-			.wait(1000, function(){
-				$("#bigj").animate({opacity: 1}, 500, "swing");
-				return dot.$animate({marginLeft: 0, opacity: 1}, 500, "swing", function(){
-					
-					setTimeout(function(){
-						$("#bigname").animate({width: 481}, 300, "swing", function(){
-							setTimeout(function(){
-								$("#tags").animate({opacity: 1}, 300, "swing");
-							}, 200);
-							$("#bigname").css("width", "auto");
-						})
-					}, 750)
-				})
-			})
-			.div("ideris").id("bigname").class("bigname")
-			
-			.div(
-				dot.br().clear("all")
-				.span("Entrepreneur").class("jstag")
-				.span("&diams;").class("diamond")
-				.span("Full Stack Developer").class("jstag")
-				.span("&diams;").class("diamond")
-				.span("IT").class("jstag")
-				.span("&diams;").class("diamond")
-				.span("UX").class("jstag")
-				.span("&diams;").class("diamond")
-				.span("Automation").class("jstag")
-				.span("&diams;").class("diamond")
-				.span("Robotics").class("jstag")
-				.span("&diams;").class("diamond")
-				.span("Economics").class("jstag")
-			).id("tags")
-			
-		).id("headeranimation")
 	).id("header")
 	
 	.div(
@@ -92,6 +60,17 @@ var geartargets = $(".gearsbg");
 for(var i = 0; i < geartargets.length; i++){
 	new GearBox(geartargets[i]);
 }
+
+var jsLogo = jsiderisLogo("#header");
+jsLogo.play();
+
+var dothtmllogoinstance = dothtmlLogo("#dothtmllogopreview");
+var dotcsslogoinstance = dotcssLogo("#dotcsslogopreview");
+
+
+$( window ).resize(function() {
+	jsLogo.resize();
+});
 	
 </script>
 <script>
