@@ -22,7 +22,7 @@ function nextVid(){currentVidIndex = Math.min(currentVidArray.length - 1, curren
 var videosTab = dot
 .tabs([
 	//dot.videoCategory("All", ["g8tLWgQX5EA", "prb96hcnzSA", ]),
-	dot.videoCategory("Engineering", ["ThlURknWfRI", "qHcAXqsbH7g", "mmaNxsrwG8Y", "vuokupujbsE", "BOtMQ_L7mLc", "sIaNER9noY0", "4y2kPmxW-xk", "xbJ0dT-VZIQ", "NNGiKx-lMeo"], playVideo),
+	dot.videoCategory("Engineering", ["EDZF383Et9Y", "ThlURknWfRI", "qHcAXqsbH7g", "mmaNxsrwG8Y", "vuokupujbsE", "BOtMQ_L7mLc", "sIaNER9noY0", "4y2kPmxW-xk", "xbJ0dT-VZIQ", "NNGiKx-lMeo"], playVideo),
 	dot.videoCategory("Economics", ["ThlURknWfRI", "voRAwyJ-9Pc", "N9T2jeADOUs"], playVideo),
 	dot.videoCategory("Futurology", ["ThlURknWfRI", "g8tLWgQX5EA", "wPIlrTOoR84"], playVideo),
 	dot.videoCategory("Puzzles", ["Q9qY9wZsq_M", "sIaNER9noY0", "7jpO6YrgUKU"], playVideo),
