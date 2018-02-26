@@ -1,0 +1,1 @@
+These are linked to directly from the donate.js script via jsideris.com.
