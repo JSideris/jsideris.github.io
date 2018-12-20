@@ -10,7 +10,7 @@ function InteractiveEmblem(targetSelector, aspectRatio, dotBuilder){
 
 	this.outerNode = this.dot(this.targetSelector).div(
 		this.dot.div().class("interactive-emblem-inner").style("position: absolute; text-align: center;")
-	).class("interactive-emblem-outer").style("position: relative; width: 100%; height: 100%; overflow: hidden;").getLast();
+	).class("interactive-emblem-outer").style("position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; overflow: hidden;").getLast();
 
 	//this.cellNode = this.outerNode.children[0];
 	this.innerNode = this.outerNode.children[0];
