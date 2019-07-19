@@ -49,7 +49,7 @@ dot.displayBox(
 	dot.h2("HTML Page Builder")
 	.p("DOThtml is my answer to dynamic HTML page construction. It's more human-friendly than HTML or other page building / UI frameworks, 100% client-side with no compiler needed, and integrates with JQuery to provide tons of dynamic event listeners and display helpers. You can even use it to create widgets, like all the interactive info boxes on this page.")
 	.p("Here is another example of a super-dynamic website I built using DOThtml, demonstrating just how powerful it is: <a href=\"https://jsideris.github.io/AdvancedKspMissionCalculator/\" target=\"_blank\">Advanced KSP Mission Calculator</a>.")
-	.a("Learn more.").class("learnmore").href("https://jsideris.github.io/DOThtml/").target("_blank"),
+	.a("Learn more.").class("learnmore").href("https://dothtml.org").target("_blank"),
 	function(){
 		dothtmllogoinstance.play();
 	}
@@ -63,7 +63,7 @@ dot.displayBox(
 	dot.h2("Powerful JavaScript CSS Building")
 	.p("DOTcss is a CSS counterpart for DOThtml. However, it's a stand alone library with no dependencies.")
 	.p("It's designed to be the most powerful JavaScript-based style manipulator.")
-	.a("Learn more.").class("learnmore").href("http://jsideris.com/DOTcss").target("_blank"),
+	.a("Learn more.").class("learnmore").href("https://dotcss.org").target("_blank"),
 	function(){
 		dotcsslogoinstance.play();
 	}
@@ -148,7 +148,7 @@ dot.displayBox(
 		.a(dot.img().src("images/twitterfollow.png")).href("https://twitter.com/joshsideris").target("_blank").class("smlink")
 		//.a(function(){dot.img().src("http://stackoverflow.com/users/flair/720238.png")}).href("http://stackoverflow.com/users/720238/jsideris").target("_blank").class("smlink")
 		.br()
-		.p(dot.a("Download Josh's Resume (PDF)").href("documents/joshsiderisresume.pdf").target("_blank").class("learnmore"))
+		.p(dot.a("Check out my resume.").href("https://resume.jsideris.com").target("_blank").class("learnmore"))
 		.p("Joshua Sideris<br />CEO, Ladon Labs<br />jsideris@jsideris.com | Toronto").style("background-color: rgba(0, 0, 0, 0.7); padding: 20px; font-family: \"Arial Black\", Gadget, sans-serif;")
 	).style("padding: 20px;")
 	
